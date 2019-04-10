@@ -4,8 +4,10 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<title>My first movie app</title>
 </head>
-<body>
-
+<body ng-controller="moviesCtrl as movie">
+	<button ng-click="movie.search()">Go</button>
+	<p>{{movie.infos.title}}</p>
 </body>
 <script src="js/angular1_7_8.js"></script>
+<script src="js/app.js"></script>
 </html>
